@@ -1,0 +1,11 @@
+Scope and closures
+
+lexical scope: scopes that can be detected during code reading (as you type)
+
+if you dont use var, the var goes to global scope
+
+execution scope/in memory scope: build as the code runs
+
+Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.
+
+Parameter this = obj.fn() --> every thing before the dot is what "this" is referring to 
