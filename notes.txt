@@ -9,3 +9,21 @@ execution scope/in memory scope: build as the code runs
 Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.
 
 Parameter this = obj.fn() --> every thing before the dot is what "this" is referring to 
+
+
+closure
+
+function makeFunc() {
+  var name = "Mozilla";
+  function displayName() {
+    alert(name);
+  }
+  return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
+
+
+
+A solução para tal problema é que a função myFunc tournou-se uma closure. Uma closure (fechamento) trata-se de um tipo especial de objeto que combina duas coisas: a função e o ambiente onde a função foi criada. Este ambiente consiste de quaisquer variáveis que estavam no escopo naquele momento em que a função foi criada. Neste caso, myFunc é a closure que incorpora tanto a função displayName quanto a palavra Mozilla que existia quando a closure foi criada.
