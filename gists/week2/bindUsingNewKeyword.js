@@ -1,7 +1,10 @@
 function personCreator(name) {
+	// this = {};
 	this.name = name;
+	console.log(this);
+	// return this;
 }
 
-var person = new personCreator("Daniel");
+var person = personCreator("Daniel");
 
-console.log("person: ", person.name);
+console.log(person);

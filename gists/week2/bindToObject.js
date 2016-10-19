@@ -10,11 +10,10 @@ var obj = {
 	}
 };
 
-console.log("My income is: ", obj.fn(5, 5));
+console.log("My income is: ", obj.bonusCalculator(5, 5));
 
 console.log("My bonus is: ", obj.getBonus());
 
-/*
 function setBonus(number) {
 	this.bonusScore = number;
 }
@@ -24,4 +23,3 @@ obj.setBonus = setBonus;
 obj['setBonus'](10);
 
 console.log("My bonus is: ", obj.getBonus());
-*/

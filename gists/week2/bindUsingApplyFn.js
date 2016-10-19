@@ -3,4 +3,4 @@ function magic(num1, num2) {
 }
 
 // parameter unpacking (like the ... on ES6)
-console.log(magic.apply(10, [10, 10]));
+console.log(magic.apply(10, [10, 20]));
