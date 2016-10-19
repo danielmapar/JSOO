@@ -32,7 +32,7 @@ var newSaga = function(num) {
 		console.log(hero + " --> " + deed + " --> " + foil);
 	}
 	saga(1);
-	//saga(2); // let`s understand in-memory scopes
+	saga(2); // let`s understand in-memory scopes
 };
 
 newSaga(1);
