@@ -1,10 +1,19 @@
-var _ = require('underscore');
-
 var gold = {a: 1};
 console.log(gold.a); // 1
 console.log(gold.z); // undefined
 
-var blue = _.extend({}, gold);
+
+function extend(newObj, objToCopy) {
+	for (var i in objToCopy) {
+		if (objToCopy.hasOwnProperty(i)) {
+			newObj[i] = objToCopy[i];
+		}
+	}
+	return newObj;
+};
+
+
+var blue = extend({}, gold);
 blue.b = 2;
 console.log(blue.a); // 1
 console.log(blue.b); // 2
