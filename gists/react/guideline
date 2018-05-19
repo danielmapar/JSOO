@@ -1,0 +1,10 @@
+1) Show pure React app - Youtube app
+2) Explain what is a component (class based, function based)
+3) Explain what is a prop and component state
+4) Show how JSX works (show print)
+5) Show componentes rendering other components
+6) Show components getting other components as props
+7) Talk a bit about babel and webpack (React-dom)
+8) Show that react is also used in mobile 
+9) Open redux schema to present redux
+10) Open auth app to show how it works

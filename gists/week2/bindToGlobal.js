@@ -1,11 +1,10 @@
 function sum(num1, num2) {
-	console.log(this);
 	return num1 + num2 + this;
 }
 
 //console.log(sum(10, 20));
 
-function global() {
+/*function global() {
 	console.log(this);
 }
 
@@ -16,4 +15,5 @@ var number2 = 20;
 
 console.log(this);
 console.log(this.number);
-console.log(this.number2);
+console.log(this.number2);*/
+console.log(sum(10, 20));

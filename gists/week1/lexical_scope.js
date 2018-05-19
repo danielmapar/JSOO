@@ -8,7 +8,6 @@ function aHero() {
 	return formatName(name, middleName);
 }
 
-
 var formatName = function(name) {
 	return name + " " + middleName;
 };

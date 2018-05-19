@@ -1,4 +1,5 @@
 function magic(num1, num2) {
+	console.log(this);
 	return num1 + num2 + this;
 }
 
@@ -9,4 +10,4 @@ var obj = {
 };
 
 // It overwrites the "left of the dot" rule
-console.log(obj.fn.call(10, 10, 10));
+console.log(obj.fn.call(20, 10, 10));

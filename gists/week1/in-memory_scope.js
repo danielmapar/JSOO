@@ -23,17 +23,27 @@ function aDeed(num) {
 			return "Nothing";
 	}
 }
-
+// foil = Cow
+	
 var hero = aHero();
 var newSaga = function(num) {
 	var foil = aFoil(num);
 	var saga = function(num) {
 		var deed = aDeed(num);
 		console.log(hero + " --> " + deed + " --> " + foil);
+		foil = 'NADA';
 	}
-	saga(1);
-	saga(2); // let`s understand in-memory scopes
+	var saga2 = function(num) {
+		var deed = aDeed(num);
+		console.log(hero + " --> " + deed + " --> " + foil);
+	}
+	//saga(1);
+	//saga(2); // let`s understand in-memory scopes
+	return [saga, saga2];
 };
 
-newSaga(1);
-//newSaga(2);
+var arr = newSaga(1);
+// Cow
+arr[0](3);
+// NADA
+arr[1](2);

@@ -11,7 +11,10 @@ Car.prototype.move = function() {
 // We need to set a relation between Van.prototype and Car.prototype to
 // be able to call move()
 var Van = function(loc) {
+  // this = Object.create(Van.prototype)
+  // {}
   Car.call(this, loc); // biding Van "this" to be used as Car "this"
+  // return this;
 };
 
 Van.prototype.grab = function() {
